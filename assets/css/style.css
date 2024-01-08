@@ -14,6 +14,13 @@ body {
   border-radius: 8px;
   text-decoration: none;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
 
 /* banner-area */
 .banner-area {
@@ -93,7 +100,11 @@ body {
   padding: 130px;
   color: #fff;
   position: relative;
-  z-index: -2;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 .welcome-now-area::after {
   content: "";
@@ -121,11 +132,12 @@ body {
   line-height: 30px;
   padding-bottom: 48px;
 }
+
 .welcome-con a {
   text-decoration: none;
   color: #fff;
   text-align: center;
-  font-family: Inter;
+  font-family: "Inter";
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -219,8 +231,11 @@ body {
 
 /* holidays-sale-area */
 .holidays-sale-area {
-  padding: 50px;
   text-align: center;
+  padding: 30px;
+}
+.holidays-sale-con{
+  padding: 50px;
 }
 .holidays-sale-con h3 {
   color: #070211;
@@ -245,6 +260,37 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 32px;
+}
+
+.holidays-sale-item{
+  position: relative;
+  /* background: url('../images/h-red.png'), url('../images/h1.png');
+  background-repeat: no-repeat;
+  background-position: bottom left, top right; */
+  
+  
+}
+.holidays-sale-item .img1{
+  position: relative;
+  left: -230px;
+}
+.holidays-sale-item .img2{
+  position: absolute;
+  right: 20%;
+  top: 75px;
+  z-index: 1;
+}
+.holidays-sale-item .img3{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.holidays-sale-item .img4{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  z-index: -1;
 }
 /* holidays-sale-area end */
 
@@ -329,7 +375,7 @@ button {
   outline: none;
   border: none;
 }
-.newsletter-con input {
+.newsletter-con input[type="text"] {
   flex-grow: 1;
   color: rgba(7, 2, 17, 0.3);
   font-family: "Inter";
@@ -338,7 +384,7 @@ button {
   padding: 20px;
   border-radius: 50px 0 0 50px;
 }
-.newsletter-con button {
+.newsletter-con .btn {
   border-radius: 0px 50px 50px 0px;
   padding: 20px 52px;
   background: #ff0000;
@@ -348,6 +394,71 @@ button {
   font-size: 20px;
   font-weight: 600;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 /* newsletter-area end */
+
+/* footer-area */
+.footer-area {
+  background: #070211;
+  color: #fff;
+  padding: 120px 140px 30px;
+}
+.footer-area hr {
+  margin: 50px 0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-con {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+.footer-item p {
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+}
+.footer-item ul li {
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+}
+.footer-item:nth-last-child(1) {
+  padding-right: 80px;
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.footer-con ul li img {
+  position: relative;
+  top: 7px;
+  left: -10px;
+  width: 24px;
+  height: 24px;
+}
+
+.copyright-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright-area p {
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 500;
+}
+.copyright-area a {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 500;
+}
+/* footer-area end */
