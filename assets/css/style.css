@@ -263,12 +263,7 @@ li {
 }
 
 .holidays-sale-item{
-  position: relative;
-  /* background: url('../images/h-red.png'), url('../images/h1.png');
-  background-repeat: no-repeat;
-  background-position: bottom left, top right; */
-  
-  
+  position: relative;  
 }
 .holidays-sale-item .img1{
   position: relative;
