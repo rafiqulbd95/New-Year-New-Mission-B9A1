@@ -9,6 +9,11 @@ body {
   font-family: "Merriweather", serif;
 }
 
+.btn{
+    padding: 10px 32px;
+    border-radius: 8px;
+}
+
 /* banner-area */
 .banner-area {
   text-align: center;
@@ -46,30 +51,30 @@ body {
 
 /* banner-area end*/
 
-/* off-area */
+/* offer-area */
 
-.off-area {
+.offer-area {
   text-align: center;
   padding: 120px 250px;
 }
 
-.off-con {
+.offer-con {
 }
-.off-con h2 {
+.offer-con h2 {
   color: #f00;
   font-family: "Inter";
   font-size: 88px;
   font-weight: 700;
   padding-bottom: 40px;
 }
-.off-con p {
+.offer-con p {
   color: #f00;
   font-family: "Inter";
   font-size: 24px;
   font-weight: 500;
   padding-bottom: 15px;
 }
-.off-con h5 {
+.offer-con h5 {
   color: #070211;
   font-family: "Inter";
   font-size: 48px;
@@ -77,4 +82,53 @@ body {
   padding-bottom: 48px;
 }
 
-/* off-area end */
+/* offer-area end */
+
+/* join-now-area */
+.join-now-area {
+  background: url("../images/Vectorrr.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 130px;
+  color: #fff;
+  position: relative;
+  z-index: -2;
+}
+.join-now-area::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0) 100%);
+}
+
+.join-con h2 {
+  font-family: "Merriweather";
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: 7.04px;
+  padding-bottom: 24px;
+}
+.join-con p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-bottom: 48px;
+}
+.join-con a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+/* join-now-area end */
