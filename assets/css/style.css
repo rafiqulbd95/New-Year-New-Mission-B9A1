@@ -9,9 +9,10 @@ body {
   font-family: "Merriweather", serif;
 }
 
-.btn{
-    padding: 10px 32px;
-    border-radius: 8px;
+.btn {
+  padding: 10px 32px;
+  border-radius: 8px;
+  text-decoration: none;
 }
 
 /* banner-area */
@@ -84,8 +85,8 @@ body {
 
 /* offer-area end */
 
-/* join-now-area */
-.join-now-area {
+/* welcome-now-area */
+.welcome-now-area {
   background: url("../images/Vectorrr.png") no-repeat;
   background-position: center;
   background-size: cover;
@@ -94,7 +95,7 @@ body {
   position: relative;
   z-index: -2;
 }
-.join-now-area::after {
+.welcome-now-area::after {
   content: "";
   position: absolute;
   top: 0;
@@ -105,14 +106,14 @@ body {
   background: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0) 100%);
 }
 
-.join-con h2 {
+.welcome-con h2 {
   font-family: "Merriweather";
   font-size: 64px;
   font-weight: 900;
   letter-spacing: 7.04px;
   padding-bottom: 24px;
 }
-.join-con p {
+.welcome-con p {
   color: rgba(255, 255, 255, 0.8);
   font-family: "Inter";
   font-size: 18px;
@@ -120,7 +121,7 @@ body {
   line-height: 30px;
   padding-bottom: 48px;
 }
-.join-con a {
+.welcome-con a {
   text-decoration: none;
   color: #fff;
   text-align: center;
@@ -130,5 +131,39 @@ body {
   text-transform: uppercase;
 }
 
+/* welcome-now-area end */
 
-/* join-now-area end */
+/* join-area */
+.join-area {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 0.1) 0%,
+    rgba(255, 0, 0, 0) 100%
+  );
+  padding: 100px 380px;
+  text-align: center;
+}
+.join-text {
+  color: #070211;
+  font-family: "Inter";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 56px;
+  text-transform: capitalize;
+  padding-bottom: 60px;
+}
+.join-text span {
+  color: #f00;
+  font-family: "Inter";
+}
+.join-con .btn {
+  color: #fff;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #f00;
+}
+
+/* join-area end*/
